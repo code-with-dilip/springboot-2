@@ -1,0 +1,7 @@
+management:
+  endpoints:
+    enabled-by-default: true
+    web:
+      exposure:
+        include: "*" # This exposes all the endpoints to the actuator
+      base-path: "/manage" #This is the base endpoint for the actuator.
