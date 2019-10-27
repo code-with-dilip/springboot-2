@@ -24,9 +24,8 @@ plugins {
 
 - More info about slice based annotations are available in the below link.
 
-```youtrack
+
 https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-test-auto-configuration.html#test-auto-configuration
-```
 
 ## Actuator
 
