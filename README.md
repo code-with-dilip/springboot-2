@@ -2,7 +2,7 @@
 
 ## Spring Boot Plugins
 
--   The below plugin dependencies are the ones responsible for treating this project as a spring boot project. 
+-   The below plugin dependencies are the ones responsible for treating this project as a spring boot project.
 
 ```youtrack
 plugins {
@@ -14,7 +14,7 @@ plugins {
 
 ## Junit 5
 
--  Junit5 information is available in this [link](https://github.com/code-with-dilip/springboot-2/blob/master/Junit5.md) 
+-  Junit5 information is available in this [link](https://github.com/code-with-dilip/springboot-2/blob/master/Junit5.md)
 
 ## Slice Testing
 
@@ -52,4 +52,24 @@ management:
         include: "*" # This exposes all the endpoints to the actuator
       base-path: "/manage" #This is the base endpoint for the actuator.
 
+```
+
+## Testing Spring Boot Applications
+
+[Testing Spring Boot Deck](https://www.slideshare.net/Pivotal/testing-spring-boot-applications/Pivotal/testing-spring-boot-applications)
+
+### MockRestServiceServer
+
+-  This works only for the RestTemplate.
+-   If you using Spring WebClient then use **WireMock** or **OkHttps's MockWebServer**
+
+
+## Spring Data JPA
+
+-	The below configuration displays the sql queries with the bind parameters in the console.
+
+```
+spring.jpa.show-sql: true
+logging.level.org.hibernate.SQL: debug
+logging.level.org.hibernate.type.descriptor.sql: trace
 ```
