@@ -42,3 +42,9 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+sourceSets {
+	test {
+		java.srcDirs = ['src/test/unit', 'src/test/intg' ]
+	}
+}
